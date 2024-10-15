@@ -14,3 +14,4 @@ const double = x => x * 2;
 const doubledNumbers = numbers.map(double);
 
 console.log(doubledNumbers);
+console.log(numbers);
