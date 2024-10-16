@@ -10,3 +10,12 @@ const people = [
   { name: "James White", jobTitle: "Product Manager", salary: 88000 },
   { name: "Lisa Green", jobTitle: "HR Specialist", salary: 72000 }
 ];
+
+const softwareEngineers = people.filter(p => p.jobTitle === "Software Engineer")
+
+const avgSalary = softwareEngineers
+  .map(p => p.salary)
+  .reduce((result, x) => result + x)
+  / softwareEngineers.length;
+
+console.log(avgSalary);
