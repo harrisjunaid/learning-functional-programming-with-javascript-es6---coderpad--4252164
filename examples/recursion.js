@@ -17,4 +17,4 @@ const fib = n => {
   }
 }
 
-console.log(fib(10))
+console.log(fib(100))
